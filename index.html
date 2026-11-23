@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MásLimp Services | Limpieza integral en Concepción</title>
+<meta name="description" content="MásLimp Services: limpieza de hogares, oficinas e industrias en Concepción y alrededores. Limpieza personalizada y visitas a terreno gratis. Cotiza al +56 9 6429 3109.">
+<meta property="og:title" content="MásLimp Services | Limpieza integral en Concepción">
+<meta property="og:description" content="Tu espacio, nuestra pasión. Limpieza de hogar, oficinas e industrial. Visitas a terreno gratis.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maslimpservices.cl/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2a5b'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3EML%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2a5b; --navy-2:#123b7a; --navy-3:#071d40;
+  --sky:#5aa9e6; --sky-soft:#e8f2fc;
+  --ink:#1b2a41; --muted:#5b6b82; --line:#e3e9f2; --white:#fff;
+  --radius:18px; --shadow:0 10px 30px rgba(11,42,91,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .15s,box-shadow .15s,background .15s;cursor:pointer;border:0}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--navy);color:#fff;box-shadow:0 8px 20px rgba(11,42,91,.25)}
+.btn-primary:hover{background:var(--navy-2)}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-outline{border:2px solid var(--navy);color:var(--navy);background:transparent}
+.btn-wa{background:#25d366;color:#fff}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sky)}
+h1,h2,h3{color:var(--navy);line-height:1.2}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin:8px 0 14px}
+.lead{color:var(--muted);font-size:17px;max-width:620px}
+section{padding:90px 0}
+.center{text-align:center}.center .lead{margin:0 auto}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-mark{position:relative;font-weight:800;font-size:26px;color:var(--navy);letter-spacing:-.5px;line-height:1}
+.logo-mark small{display:block;font-size:10px;letter-spacing:.42em;font-weight:600;color:var(--navy-2);margin-top:3px;text-align:right}
+.logo-mark .swoosh{position:absolute;left:-14px;top:-10px;width:150px;height:46px;pointer-events:none}
+.nav ul{display:flex;gap:30px;list-style:none;font-weight:500;font-size:15px}
+.nav ul a:hover{color:var(--navy-2)}
+.nav .btn{padding:11px 20px}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;color:var(--navy)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#fff 0%,var(--sky-soft) 100%);padding:80px 0 100px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(34px,5.4vw,58px);font-weight:800;margin:14px 0 18px;letter-spacing:-1px}
+.hero h1 span{color:var(--sky)}
+.hero .lead{font-size:18px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.badges{display:flex;flex-wrap:wrap;gap:22px;margin-top:36px;color:var(--muted);font-size:14px}
+.badges div{display:flex;align-items:center;gap:8px}
+.badges svg{color:var(--navy)}
+.hero-card{position:relative;background:var(--navy);border-radius:28px;padding:40px 34px;color:#fff;box-shadow:0 30px 60px rgba(11,42,91,.30)}
+.hero-card h3{color:#fff;font-size:22px;margin-bottom:6px}
+.hero-card p{color:#c9d8ee;font-size:15px}
+.hero-card ul{list-style:none;margin:24px 0 28px;display:grid;gap:14px}
+.hero-card li{display:flex;align-items:center;gap:12px;font-weight:500}
+.hero-card li span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(90,169,230,.18);color:var(--sky);flex:none}
+.sparkle{position:absolute;color:var(--sky)}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5}
+
+/* Services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:50px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 28px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.icon{width:62px;height:62px;border-radius:16px;background:var(--sky-soft);color:var(--navy);display:grid;place-items:center;margin-bottom:20px}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+.card ul{margin-top:16px;list-style:none;display:grid;gap:8px;font-size:14px}
+.card li{display:flex;gap:8px;align-items:flex-start}
+.card li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--sky);margin-top:8px}
+
+/* Why */
+.why{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.why h2,.why h3{color:#fff}
+.why .lead{color:#c9d8ee}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:50px}
+.why-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px 24px}
+.why-item .icon{background:rgba(90,169,230,.18);color:var(--sky)}
+.why-item h3{font-size:18px;margin-bottom:8px}
+.why-item p{color:#c9d8ee;font-size:14px}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px;counter-reset:s}
+.step{position:relative;padding:30px 26px;border-radius:var(--radius);background:var(--sky-soft)}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;margin-bottom:16px}
+.step h3{font-size:19px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+
+/* CTA band */
+.band{background:linear-gradient(120deg,var(--navy) 0%,var(--navy-2) 100%);border-radius:28px;padding:56px 50px;display:flex;justify-content:space-between;align-items:center;gap:30px;color:#fff;flex-wrap:wrap}
+.band h2{color:#fff;margin:0 0 6px}
+.band p{color:#c9d8ee}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;margin-top:40px;align-items:start}
+.contact-list{display:grid;gap:18px}
+.contact-item{display:flex;gap:16px;align-items:center;padding:20px;border:1px solid var(--line);border-radius:var(--radius);transition:box-shadow .2s}
+.contact-item:hover{box-shadow:var(--shadow)}
+.contact-item .icon{margin:0;width:52px;height:52px;flex:none}
+.contact-item small{display:block;color:var(--muted);font-size:13px}
+.contact-item strong{color:var(--navy);font-weight:600;word-break:break-word}
+form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:var(--shadow)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;font-weight:500;color:var(--navy);margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:15px;color:var(--ink);background:#fbfcfe;transition:border .15s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sky);background:#fff}
+.field{margin-bottom:16px}
+textarea{min-height:110px;resize:vertical}
+.hidden{display:none}
+
+footer{background:var(--navy-3);color:#9fb2cf;padding:40px 0;font-size:14px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .logo-mark{color:#fff}footer .logo-mark small{color:#9fb2cf}
+.social{display:flex;gap:12px}
+.social a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);color:#fff}
+.social a:hover{background:var(--sky)}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.25);transition:transform .15s}
+.wa-float:hover{transform:scale(1.08)}
+
+@media (max-width:960px){
+  .hero-grid,.contact-grid{grid-template-columns:1fr}
+  .cards,.steps{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  section{padding:64px 0}
+  .wrap{padding:0 16px}
+  .nav ul,.nav .btn{display:none}
+  .menu-btn{display:block}
+  .nav.open ul{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:#fff;padding:20px 16px;gap:16px;border-bottom:1px solid var(--line)}
+  .cards,.steps,.why-grid,.row{grid-template-columns:1fr}
+  .hero{padding:50px 0 70px}
+  .hero-card{padding:30px 24px}
+  .band{padding:40px 26px}
+  form{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav" id="nav">
+    <a href="#inicio" class="logo" aria-label="MásLimp Services">
+      <div class="logo-mark">
+        <svg class="swoosh" viewBox="0 0 150 46" fill="none" aria-hidden="true"><path d="M6 40C14 14 60 2 112 8" stroke="#5aa9e6" stroke-width="4" stroke-linecap="round"/><path d="M128 4l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#0b2a5b"/><path d="M138 15l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="#0b2a5b"/></svg>
+        MásLimp<small>SERVICES</small>
+      </div>
+    </a>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Por qué elegirnos</a></li>
+      <li><a href="#proceso">Cómo trabajamos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="btn btn-primary">Cotizar gratis</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="blob" style="width:380px;height:380px;background:#cfe4f8;right:-120px;top:-120px"></div>
+  <div class="blob" style="width:240px;height:240px;background:#dbeafb;left:-80px;bottom:-90px"></div>
+  <div class="wrap hero-grid" style="position:relative">
+    <div>
+      <span class="eyebrow">Servicios de limpieza integral · Concepción</span>
+      <h1>Tu espacio, <span>nuestra pasión.</span></h1>
+      <p class="lead">Limpieza profesional y personalizada para hogares, oficinas e industrias en Concepción y alrededores. Te visitamos sin costo para evaluar tu espacio y entregarte una cotización a medida.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/56964293109?text=Hola%20M%C3%A1sLimp%2C%20quiero%20cotizar%20un%20servicio%20de%20limpieza" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.5c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.6.9 1-3.5-.2-.4C3.1 15.6 2.5 13.8 2.5 12 2.5 6.8 6.8 2.5 12 2.5S21.5 6.8 21.5 12 17.2 21.5 12 21.5zM12 .5C5.7.5.5 5.7.5 12c0 2 .5 4 1.5 5.7L.5 23.5l5.9-1.5c1.7.9 3.6 1.4 5.6 1.4 6.3 0 11.5-5.2 11.5-11.5S18.3.5 12 .5z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+        <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+      </div>
+      <div class="badges">
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Visitas a terreno gratis</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Limpieza personalizada</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Personal comprometido</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <svg class="sparkle" style="right:28px;top:26px" width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+      <svg class="sparkle" style="right:68px;top:62px;opacity:.6" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+      <h3>¿Qué necesitas limpiar?</h3>
+      <p>Atendemos cada espacio con el cuidado que merece.</p>
+      <ul>
+        <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></span>Limpieza de hogar</li>
+        <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1"/></svg></span>Limpieza de oficinas</li>
+        <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 21h20M4 21V10l5 3V10l5 3V6l6 4v11"/></svg></span>Limpieza industrial</li>
+        <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M12 3v18M3 12h18"/></svg></span>Limpieza de vidrios y altura</li>
+      </ul>
+      <a href="#contacto" class="btn btn-light">Solicitar visita gratis →</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap center">
+    <span class="eyebrow">Nuestros servicios</span>
+    <h2>Limpieza integral para cada espacio</h2>
+    <p class="lead">Planes puntuales o periódicos, adaptados a tus horarios y necesidades.</p>
+  </div>
+  <div class="wrap cards">
+    <div class="card">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></div>
+      <h3>Hogar</h3>
+      <p>Casas y departamentos impecables, para que disfrutes tu tiempo libre.</p>
+      <ul><li>Limpieza general y profunda</li><li>Cocinas y baños</li><li>Limpieza post mudanza o post obra</li></ul>
+    </div>
+    <div class="card">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1"/></svg></div>
+      <h3>Oficinas</h3>
+      <p>Espacios de trabajo limpios y ordenados que transmiten profesionalismo.</p>
+      <ul><li>Mantención diaria o semanal</li><li>Escritorios, salas y áreas comunes</li><li>Sanitización de espacios</li></ul>
+    </div>
+    <div class="card">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 21h20M4 21V10l5 3V10l5 3V6l6 4v11"/></svg></div>
+      <h3>Industrial</h3>
+      <p>Limpieza de alto estándar para bodegas, plantas y recintos productivos.</p>
+      <ul><li>Bodegas y galpones</li><li>Vidrios y trabajos en altura</li><li>Retiro de residuos</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="nosotros">
+  <svg class="sparkle" style="right:6%;top:50px;opacity:.35" width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+  <div class="wrap">
+    <span class="eyebrow">Por qué elegirnos</span>
+    <h2>Confianza y calidad en cada visita</h2>
+    <p class="lead">Somos una empresa de Concepción dedicada a dejar tus espacios limpios, seguros y agradables.</p>
+    <div class="why-grid">
+      <div class="why-item"><div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 16h13V5H1zM14 9h4l3 3v4h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></div><h3>Visita gratis</h3><p>Evaluamos tu espacio en terreno sin costo antes de cotizar.</p></div>
+      <div class="why-item"><div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z" transform="scale(.8) translate(3 3)"/></svg></div><h3>Personalizado</h3><p>Cada plan se ajusta a tu espacio, horario y presupuesto.</p></div>
+      <div class="why-item"><div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Personal de confianza</h3><p>Equipo responsable, puntual y comprometido con tu satisfacción.</p></div>
+      <div class="why-item"><div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 19H4.8a1.8 1.8 0 01-1.6-2.7L7 9.5M11 4.2a1.8 1.8 0 013.1 0l3.9 6.8M17 19h2.2a1.8 1.8 0 001.6-2.7l-1.3-2.3M14 16l-3 3 3 3M7.5 6.5l1 3.8-3.8 1M17 8.3l3.6-1.1.9 3.7"/></svg></div><h3>Cuidado ambiental</h3><p>Usamos productos y prácticas responsables con el entorno.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap center">
+    <span class="eyebrow">Cómo trabajamos</span>
+    <h2>Simple, rápido y sin compromiso</h2>
+  </div>
+  <div class="wrap steps">
+    <div class="step"><h3>Contáctanos</h3><p>Escríbenos por WhatsApp, correo o el formulario y cuéntanos qué necesitas.</p></div>
+    <div class="step"><h3>Visita a terreno gratis</h3><p>Vamos a tu hogar, oficina o empresa para evaluar el trabajo.</p></div>
+    <div class="step"><h3>Limpiamos tu espacio</h3><p>Recibes tu cotización y coordinamos el servicio en el horario que te acomode.</p></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <h2>¿Listo para un espacio impecable?</h2>
+        <p>Agenda tu visita a terreno gratis hoy mismo.</p>
+      </div>
+      <a class="btn btn-light" href="tel:+56964293109">Llamar al +56 9 6429 3109</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="background:var(--sky-soft)">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h2>Solicita tu cotización</h2>
+    <p class="lead">Respondemos a la brevedad. Atendemos Concepción y alrededores.</p>
+    <div class="contact-grid">
+      <div class="contact-list">
+        <a class="contact-item" href="https://wa.me/56964293109" target="_blank" rel="noopener" style="background:#fff">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></div>
+          <div><small>Teléfono / WhatsApp</small><strong>+56 9 6429 3109</strong></div>
+        </a>
+        <a class="contact-item" href="mailto:maslimp.concepcion@gmail.com" style="background:#fff">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div><small>Correo</small><strong>maslimp.concepcion@gmail.com</strong></div>
+        </a>
+        <a class="contact-item" href="https://www.instagram.com/maslimp_concepcion/" target="_blank" rel="noopener" style="background:#fff">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+          <div><small>Instagram</small><strong>@maslimp_concepcion</strong></div>
+        </a>
+        <div class="contact-item" style="background:#fff">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><small>Cobertura</small><strong>Concepción y Gran Concepción</strong></div>
+        </div>
+      </div>
+
+      <form name="cotizacion" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="cotizacion">
+        <p class="hidden"><label>No llenar: <input name="bot-field"></label></p>
+        <div class="row">
+          <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" required autocomplete="name"></div>
+          <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" required autocomplete="tel" placeholder="+56 9 ..."></div>
+        </div>
+        <div class="field"><label for="email">Correo</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        <div class="row">
+          <div class="field"><label for="servicio">Tipo de servicio</label>
+            <select id="servicio" name="servicio">
+              <option>Limpieza de hogar</option><option>Limpieza de oficinas</option><option>Limpieza industrial</option><option>Vidrios / altura</option><option>Otro</option>
+            </select>
+          </div>
+          <div class="field"><label for="comuna">Comuna</label><input id="comuna" name="comuna" placeholder="Ej: Concepción"></div>
+        </div>
+        <div class="field"><label for="mensaje">Cuéntanos qué necesitas</label><textarea id="mensaje" name="mensaje"></textarea></div>
+        <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Enviar solicitud</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="logo-mark">MásLimp<small>SERVICES</small></div>
+    <div>© <span id="y"></span> MásLimp Services · Concepción, Chile</div>
+    <div class="social">
+      <a href="https://www.instagram.com/maslimp_concepcion/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+      <a href="https://wa.me/56964293109" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 01-12.5 7.4L3 21l2.2-5.4A8.4 8.4 0 1121 11.5z"/></svg></a>
+      <a href="mailto:maslimp.concepcion@gmail.com" aria-label="Correo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/56964293109?text=Hola%20M%C3%A1sLimp%2C%20quiero%20cotizar" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.5c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.6.9 1-3.5-.2-.4C3.1 15.6 2.5 13.8 2.5 12 2.5 6.8 6.8 2.5 12 2.5S21.5 6.8 21.5 12 17.2 21.5 12 21.5zM12 .5C5.7.5.5 5.7.5 12c0 2 .5 4 1.5 5.7L.5 23.5l5.9-1.5c1.7.9 3.6 1.4 5.6 1.4 6.3 0 11.5-5.2 11.5-11.5S18.3.5 12 .5z"/></svg>
+</a>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.querySelectorAll('.nav ul a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+</script>
+</body>
+</html>
